@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     >
-
+<!--   This is just for initial splash screen for user.-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -37,20 +36,19 @@
     </LinearLayout>
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_margin="20dp"
+
             >
             <!--        Question 1-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-               android:background="#558B2F"
-                android:layout_marginTop="10dp"
                 android:layout_marginBottom="16dp">
 
                 <LinearLayout
@@ -64,7 +62,7 @@
                         android:layout_weight="0.5"
                         android:layout_height="wrap_content"
                         android:text="@string/question_one"
-                        android:textAlignment="center"
+                        android:textStyle="bold"
                         />
 
                 </LinearLayout>
@@ -74,7 +72,6 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:layout_marginLeft="16dp"
-                    android:layout_marginTop="15dp"
                     android:layout_marginBottom="10dp"
                     android:id="@+id/q1RadioGroup">
 
@@ -113,7 +110,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:background="@color/colorAccent"
                 android:layout_marginBottom="16dp">
 
                 <LinearLayout
@@ -126,8 +122,9 @@
                         android:layout_width="0dp"
                         android:layout_weight="0.5"
                         android:layout_height="wrap_content"
+                        android:textStyle="bold"
                         android:text="@string/question_two"
-                        android:textAlignment="center" />
+                         />
 
                 </LinearLayout>
 
@@ -174,7 +171,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:background="#F9A825"
                 android:layout_marginBottom="16dp">
 
                 <LinearLayout
@@ -187,7 +183,7 @@
                     <TextView
                         android:layout_width="0dp"
                         android:layout_weight="9"
-                        android:textAlignment="center"
+                        android:textStyle="bold"
                         android:layout_height="wrap_content"
                         android:text="@string/question_three"
                         />
@@ -229,7 +225,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:background="@color/colorAccent"
                 android:layout_marginBottom="16dp">
 
                 <LinearLayout
@@ -242,8 +237,8 @@
                         android:layout_width="0dp"
                         android:layout_weight="0.5"
                         android:layout_height="wrap_content"
+                        android:textStyle="bold"
                         android:text="@string/question_four"
-                        android:textAlignment="center"
                         />
 
                 </LinearLayout>
@@ -284,7 +279,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:background="#D84315"
                 android:layout_marginBottom="16dp">
 
                 <LinearLayout
@@ -298,8 +292,8 @@
                         android:layout_width="0dp"
                         android:layout_weight="9"
                         android:layout_height="wrap_content"
-                        android:text="@string/question_five"
-                        android:textAlignment="center"/>
+                        android:textStyle="bold"
+                        android:text="@string/question_five" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -326,7 +320,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:background="#9E9D24"
                 android:layout_marginBottom="16dp">
 
                 <LinearLayout
@@ -339,9 +332,8 @@
                         android:layout_width="0dp"
                         android:layout_weight="0.5"
                         android:layout_height="wrap_content"
-                        android:text="@string/question_six"
-                        android:textAlignment="center"
-                       />
+                        android:textStyle="bold"
+                        android:text="@string/question_six" />
 
                 </LinearLayout>
 
@@ -371,7 +363,7 @@
                 android:layout_margin="20dp"
                 android:text="Submit"
                 android:id="@+id/submit"
-                android:background="@color/colorAccent"
+                android:background="#0277BD"
                 />
 
 
