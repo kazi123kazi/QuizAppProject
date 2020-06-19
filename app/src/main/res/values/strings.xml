@@ -1,0 +1,32 @@
+<resources>
+
+    <string name="app_name">QuizApp</string>
+<!--    radiobutton-->
+    <string name="question_one">Who is Father of Computer?</string>
+    <string name="q1o1">Charles Babbage</string>
+    <string name="q1o2">Albert Einstein</string>
+    <string name="q1o3">Newton</string>
+
+<!--    radiobutton-->
+    <string name="question_two">PUBG made by country ?</string>
+    <string name="q2O1">China</string>
+    <string name="q2O2">South Korea</string>
+    <string name="q2O3">India</string>
+
+<!-- Edit text-->
+    <string name="question_six">Who is founder of Amazon?</string>
+    <string name="question_five">In which year second world war was held?</string>
+<!--    Checkbox-->
+    <string name="question_three">Which of these are found in water?</string>
+    <string name="q3O1">Oxygen</string>
+    <string name="q3O2">Hydrogen</string>
+    <string name="q3O3">Helium</string>
+
+    <string name="question_four">Which of these are Cricketer?</string>
+    <string name="q4O1">M S Dhoni</string>
+    <string name="q4O2">Salman Khan</string>
+    <string name="q4O3">James Watson</string>
+
+    <string name="submit">Submit</string>
+
+</resources>
