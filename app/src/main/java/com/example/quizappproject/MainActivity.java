@@ -7,21 +7,36 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 
+import android.widget.ScrollView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     int correctAnswer=0;
-    Button submit;
-
+    Button submit,go;
+    LinearLayout mLinearLayout;
+    ScrollView mScroolView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        go=(Button)findViewById(R.id.go);
         submit=(Button)findViewById(R.id.submit);
+
+        mLinearLayout=findViewById(R.id.starting);
+        mScroolView=findViewById(R.id.nextLayout);
+
+        go.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mLinearLayout.setVisibility(View.INVISIBLE);
+                mScroolView.setVisibility(View.VISIBLE);
+            }
+        });
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
         CheckBox hydrogenChk = (CheckBox) findViewById(R.id.q3CheckBox2);
         boolean isHydrogen= hydrogenChk.isChecked();
 
-        CheckBox heliumChk = (CheckBox) submit.findViewById(R.id.q3CheckBox3);
+        CheckBox heliumChk = (CheckBox) findViewById(R.id.q3CheckBox3);
         boolean isHelium = heliumChk.isChecked();
 
         if(isHydrogen && isOxygenChk && !isHelium) {
@@ -90,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
         CheckBox watson = (CheckBox) findViewById(R.id.q4CheckBox3);
         boolean isWatson= watson.isChecked();
 
-        CheckBox salmanKhanChk = (CheckBox) submit.findViewById(R.id.q4CheckBox3);
+        CheckBox salmanKhanChk = (CheckBox) findViewById(R.id.q4CheckBox2);
         boolean isSalmanKhan = salmanKhanChk.isChecked();
 
         if(isWatson && isMsDhoni && !isSalmanKhan) {
